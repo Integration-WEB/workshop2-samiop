@@ -1,0 +1,23 @@
+body {
+  color: #ff752f;
+  color: white;
+}
+
+.btn {
+  border: 3px solid yellow;
+}
+
+.text, .h1, .textarea {
+  color: red;
+  font-size: 20px;
+}
+
+.sassfirst {
+  content: "React";
+}
+
+.sasslast {
+  content: "python";
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+$primary-color: #ff752f;
+
+
+
+
+@function sal(){
+    @if background-color== white{
+        @return(black)   
+    }@else{
+        @return(white)  
+    }
+}
+
+body{
+    color: $primary-color;
+    color:sal()
+    }
+@mixin border() {
+    
+border: 3px solid yellow;
+    
+    }
+
+    .btn{
+        @include border();
+    }
+
+.text{
+color: red;
+font-size: 20px;
+}
+
+.textarea{
+
+    @extend .text;
+
+}
+.h1{
+    @extend .text ;
+    
+}
+
+$language:"React","Spring","python";
+@function first($language){
+
+@return nth($language,1);
+
+}
+
+@function last($language){
+
+    @return nth($language,-1);
+    
+    }
+
+    @function lastpropositionoussema($language){
+
+        @return nth($language,length($list));
+        
+        }
+.sassfirst{
+content:first($language);
+
+}
+
+.sasslast{
+    content:last($language);
+    
+    }
+
+
+
+
+
+
